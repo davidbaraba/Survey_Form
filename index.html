@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for participating to our survey form</p>
+            <form id="survey-form">
+                <div class="formDiv">
+                    <label id="name-label" for="name" class="labelName">Name</label>
+                    <input required placeholder="Enter Your Name" id="name" class="formControl" type="text">
+                </div>
+                <div class="formDiv">
+                    <label id="email-label" for="email" class="labelName">Email</label>
+                    <input required placeholder="Enter Your Email" id="email" class="formControl" type="email">
+                </div>
+                <div class="formDiv">
+                    <label id="number-label" for="number" class="labelName">Age(optional)</label>
+                    <input required min="18" max="60" placeholder="Age" id="number" class="formControl" type="number" min="10">
+                </div>
+                <div class="formDiv">
+                    <p class="labelName">Which option best describes your current role?</p>
+                    <select required class="formControl" id="dropdown">
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="fotmDiv">
+                    <p class="labelName">Would you recommend yourself to a friend?</p>
+                    <label>
+                        <input value="sure" class="inputRadio" type="radio" name="friendCamp">Definitely
+                    </label>
+                    <label>
+                        <input value="maybe" class="inputRadio" type="radio" name="friendCamp">Maybe
+                    </label>
+                    <label>
+                        <input value="not sure" class="inputRadio" type="radio" name="friendCamp">Not sure
+                    </label>
+                </div>
+                <div class="formDiv">
+                    <p class="labelName">What is your favorite feature of coding?</p>
+                    <select required class="formControl" id="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="student">Challenges</option>
+                        <option value="job">Projects</option>
+                        <option value="learner">Community</option>
+                        <option value="preferNo">Open source</option>
+                    </select>
+                </div>
+                <div class="formDiv">
+                    <p class="labelName">What would you like to improved your skills? <span class="braces">(Check all that apply)</span></p>
+                    <label>
+                        <input type="checkbox" name="choise" value="front-end-projects" class="checkboxInput">Front-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="back-end-projects" class="checkboxInput">Back-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="data-visualization" class="checkboxInput">Data Visualization
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="challenges" class="checkboxInput">Challenges
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="open-source-community" class="checkboxInput">Open Source Community
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="gitter-help-rooms" class="checkboxInput">Gitter help rooms
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="videos" class="checkboxInput">Videos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="city-meetups" class="checkboxInput">City Meetups
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="Wiki" class="checkboxInput">Wiki
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="forum" class="checkboxInput">Forum
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choise" value="additional-courses" class="checkboxInput">Additional Courses
+                    </label>
+                </div>
+                <div class="formDiv">
+                    <p class="labelName">Any comments or suggestions?</p>
+                    <textarea placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="formDiv flex">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
